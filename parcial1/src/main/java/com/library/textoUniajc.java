@@ -1,4 +1,22 @@
 package com.library;
 
 public class textoUniajc extends libroTexto {
+    private String facultad;
+
+    public textoUniajc(String titulo, String autor, int numEjemplares, int numPrestados, String curso, String facultad) {
+        super(titulo, autor, numEjemplares, numPrestados, curso);
+        this.facultad = facultad;
+    }
+
+    public String getFacultad() {
+        return facultad;
+    }
+
+    public void setFacultad(String facultad) {
+        this.facultad = facultad;
+    }
+
+    public String toString() {
+        return super.toString() + " facultad: " + facultad;
+    }
 }
